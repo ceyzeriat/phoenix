@@ -1,16 +1,15 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .context import sample
 
-import unittest
-
-
-class BasicTestSuite(unittest.TestCase):
-    """Basic test cases."""
-
-    def test_absolute_truth_and_meaning(self):
-        assert True
+import pytest
 
 
-if __name__ == '__main__':
-    unittest.main()
+from .context import phoenix
+
+
+def inc(x):
+    return x + 1
+
+def test_answer():
+    assert inc(3) == 5
