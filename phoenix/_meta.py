@@ -3,20 +3,20 @@
 
 
 __version__ = '0.0.1'
-__author__ = u'Guillaume Schworer'
+__author__ = u'<author>'
 __authors__ = [
 	__author__,
 ]
-__contact__ = 'guillaume.schworer@gmail.com'
+__contact__ = '<email>'
 __license__ = 'AGPLv3+'
 
 # don't edit this
 __major__, __minor__, __micro__ = list(map(int, __version__.split('.')))
 
 
-_package_name = 'phoenix'
-_url = 'https://github.com/ceyzeriat/{}'.format(_package_name)
-_description = 'What this does'
+_package_name = '<package>'
+_url = 'https://github.com/<githubuser>/{}'.format(_package_name)
+_description = '<description>'
 _python = '>=3.6.0'
 
 

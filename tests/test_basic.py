@@ -5,7 +5,7 @@
 import pytest
 
 
-from .context import phoenix
+from .context import <package>
 
 
 def inc(x):
