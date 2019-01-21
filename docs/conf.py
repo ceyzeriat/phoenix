@@ -26,8 +26,9 @@ meta = {}
 with open(meta_file) as f:
     exec(f.read(), meta)
 
+package_name = meta['_package_name']
 
-package_name_cap = _package_name[0].upper() + _package_name[1:]
+package_name_cap = package_name[0].upper() + package_name[1:]
 
 
 def skip(app, what, name, obj, skip, options):
@@ -68,7 +69,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = _package_name
+project = package_name
 copyright = u'{:d}, {}'.format(time.localtime()[0], __author__)
 
 # The version info for the project you're documenting, acts as replacement for
@@ -225,7 +226,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', '{}.tex'.format(_package_name), u'{} Documentation'.format(package_name_cap),
+  ('index', '{}.tex'.format(package_name), u'{} Documentation'.format(package_name_cap),
    __author__, 'manual'),
 ]
 
@@ -255,7 +256,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', _package_name, u'{} Documentation'.format(package_name_cap),
+    ('index', package_name, u'{} Documentation'.format(package_name_cap),
      [__author__], 1)
 ]
 
@@ -269,8 +270,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', _package_name, u'{} Documentation'.format(package_name_cap),
-   __author__, _package_name, _description,
+  ('index', package_name, u'{} Documentation'.format(package_name_cap),
+   __author__, package_name, _description,
    'Miscellaneous'),
 ]
 

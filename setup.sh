@@ -4,6 +4,8 @@ if [ $# -ne 5 ];
 then
     echo "usage: setup.sh packagename email author description githubuser"
     echo "  where package-name must be [a-z]+"
+    echo "  beware that inputs containing spaces must be quoted, or the spaces escaped"
+    echo "  ex: ./setup.sh foo me@mail.com 'John Doe' 'A package' Johndoe123"
     exit 0
 fi
 

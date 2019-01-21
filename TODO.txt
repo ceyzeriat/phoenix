@@ -1,0 +1,7 @@
+- put setup.py REQUIRED and EXTRA in _meta
+- add HISTORY.rst and the install date and in the manifest
+- setup.sh change year in LICENSE
+- change <tags> to <<tags>>
+- finish README
+- test dummy package, and tests, and coverage, and documentation
+- add example.py
